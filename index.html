@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <div class="Website bg-[hsl(241.42,95%,9%)] min-h-screen p-2 lg:px-22 xl:px-32 2xl:px-38 lg:bg-red-600 text-white">
+  <div class="Website bg-[hsl(241.42,95%,9%)] min-h-screen p-2 lg:px-22 xl:px-32 2xl:px-38 text-white">
     <header>
       <!-- Nav Section Starts here -->
       <nav class="flex justify-between p-2">
         <img src="/assets/images/logo.svg" alt="logo" class="w-44" />
         <div
-          class="units_Toggle flex justify-center items-center gap-1 relative bg-[hsl(240,26%,20%)] p-1 px-3 rounded-md">
+          class="units_Toggle flex justify-center items-center gap-1 relative bg-[hsl(240,26%,20%)] p-1 px-3 rounded-md hover:border hover:border-white">
           <img src="/assets/images/icon-units.svg" class="w-3 h-3" />
           <span class="sm:text-sm">Units</span>
           <span>&#8964;</span>
@@ -26,46 +26,39 @@
 
       <!-- Units Expand Section Starts here -->
       <div id="units_Expanded"
-        class="invisible bg-[hsl(240,26%,20%)] float-left p-4 rounded-xl absolute right-8 z-10 sm:flex sm:flex-col sm:gap-2">
+        class="invisible bg-[hsl(244,26%,20%)] float-left p-4 rounded-xl absolute right-4 lg:right-24 xl:right-34 2xl:right-40 z-10 border border-white sm:flex sm:flex-col sm:gap-2">
 
         <p class="imperial border-white p-1.5 rounded-md bg-[#1449e6e4]">Switch to Imperial</p>
         <p class="metric hidden border-white p-1.5 rounded-md bg-[#1449e6e4]">Switch to Metric</p>
 
         <div class="sm:flex sm:flex-col">
           <span class="text-xs mb-1">Temperature</span>
-
           <p class="flex justify-between items-center gap-4 p-1 rounded-md hover:bg-[hsl(240,22%,24%)] text-sm">
             <span>Celsius (°C)</span>
             <span class="toggleMetric">
               <img src="/assets/images/icon-checkmark.svg" />
             </span>
           </p>
-
           <p class="flex justify-between items-center gap-4 p-1 rounded-md hover:bg-[hsl(240,22%,24%)] text-sm">
             <span>Fahrenheit (°F)</span>
             <span class="toggleImperial invisible">
               <img src="/assets/images/icon-checkmark.svg" />
             </span>
           </p>
-
         </div>
-
         <div class="border border-gray-500"></div>
-
         <div class="sm:flex sm:flex-col">
           <span class="text-xs mb-1">Wind Speed</span>
           <p class="flex justify-between items-center gap-4 p-1 rounded-md hover:bg-[hsl(240,22%,24%)] text-sm">
-            <span>km/h</span> 
+            <span>km/h</span>
             <span class="toggleMetric"><img src="/assets/images/icon-checkmark.svg" /></span>
           </p>
           <p class="flex justify-between items-center gap-4 p-1 rounded-md hover:bg-[hsl(240,22%,24%)] text-sm">
-            <span>mph</span> 
+            <span>mph</span>
             <span class="toggleImperial invisible"><img src="/assets/images/icon-checkmark.svg" /></span>
           </p>
         </div>
-
         <div class="border border-gray-500"></div>
-
         <div class="sm:flex sm:flex-col">
           <span class="text-xs mb-1">Precipitation</span>
           <p class="flex justify-between items-center gap-4 p-1 rounded-md hover:bg-[hsl(240,22%,24%)] text-sm">
@@ -77,7 +70,6 @@
             <span class="toggleImperial invisible"><img src="/assets/images/icon-checkmark.svg" /></span>
           </p>
         </div>
-
       </div>
     </header>
 
@@ -107,7 +99,7 @@
         </div>
 
         <section
-          class="weather_details flex flex-col md:flex-row justify-center md:justify-between md:items-center gap-2">
+          class="weather_details flex flex-col md:flex-row justify-center md:justify-between md:items-center gap-2 mb-8">
           <!-- Current Weather Data -->
           <div id="left_weather_details" class="sm:flex flex-[0_0_70%] sm:flex-col sm:gap-6">
             <div
@@ -117,7 +109,7 @@
                 <p class="injectDate">Day, Date</p>
               </div>
               <div class="flex justify-center items-center gap-4 text-5xl sm:text-4xl">
-                <img class="injectImg" width="64" height="64"/>
+                <img class="injectImg w-16 h-16" />
                 <p class="font-semibold"><span class="injectTemperature">20</span></p>
               </div>
             </div>
@@ -161,7 +153,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay1 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg1" width="32" height="32"/>
+                    <img class="injectImg1 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp1">A</span>
@@ -171,7 +163,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay2 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg2" width="32" height="32"/>
+                    <img class="injectImg2 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp2">A</span>
@@ -181,7 +173,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay3 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg3" width="32" height="32"/>
+                    <img class="injectImg3 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp3">A</span>
@@ -191,7 +183,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay4 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg4" width="32" height="32"/>
+                    <img class="injectImg4 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp4">A</span>
@@ -201,7 +193,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay5 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg5" width="32" height="32"/>
+                    <img class="injectImg5 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp5">A</span>
@@ -211,7 +203,7 @@
                 <div class="bg-[hsl(240,26%,20%)] rounded-xl flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay6 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg6" width="32" height="32"/>
+                    <img class="injectImg6 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp6">A</span>
@@ -222,7 +214,7 @@
                   class="bg-[hsl(240,26%,20%)] rounded-xl flex-[0_0_31.2%] sm:flex-[1_1_25%] p-4 sm:p-2 flex flex-col gap-1">
                   <p class="injectDay7 sm:text-xs">Day</p>
                   <div class="flex justify-center">
-                    <img class="injectImg7" width="32" height="32"/>
+                    <img class="injectImg7 w-10 h-10 object-contain object-center" />
                   </div>
                   <div class="flex justify-between gap-2 sm:text-xs">
                     <span class="injectLowTemp7">A</span>
@@ -240,14 +232,14 @@
               <span class="font-semibold sm:text-sm">Hourly Forecast</span>
 
               <button
-                class="switch_Forecast_Day bg-[hsl(240,22%,24%)] flex justify-center items-center gap-1 px-2 py-1 rounded-md">
+                class="switch_Forecast_Day bg-[hsl(240,22%,24%)] flex justify-center items-center gap-1 px-2 py-1 rounded-md hover:border hover:border-white">
                 <span class="day_Forecast_details hidden text-sm sm:text-xs">Today</span>
                 <span>&#8964;</span>
               </button>
             </div>
 
             <div
-              class="forecast_Days_Expand invisible absolute right-4 z-10 text-start flex flex-col gap-1 bg-[hsl(240,26%,20%)] p-4 rounded-md">
+              class="forecast_Days_Expand invisible absolute right-4 lg:right-24 xl:right-34 2xl:right-40 z-10 text-start border border-white mt-2 flex flex-col gap-1 bg-[hsl(244,26%,20%)] p-4 rounded-md">
               <p class="weekday hover:bg-[hsl(240,22%,24%)] rounded-md sm:text-sm p-1 pr-8">
                 Monday
               </p>
@@ -275,7 +267,7 @@
               class="hourly_Forecast_details flex flex-col gap-2 mt-3 text-transparent overflow-y-scroll h-[62vh] md:h-[44vh]">
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg0" width="32" height="32" />
+                  <img class="injectHfWImg0 w-8 h-8 object-contain object-center" />
                   <span>00 AM </span>
                 </div>
                 <div class="my-auto injectTemp0">Temp</div>
@@ -283,7 +275,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg1" width="32" height="32" />
+                  <img class="injectHfWImg1 w-8 h-8 object-contain object-center" />
                   <span>01 AM </span>
                 </div>
                 <div class="my-auto injectTemp1">Temp</div>
@@ -291,7 +283,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg2" width="32" height="32" />
+                  <img class="injectHfWImg2 w-8 h-8 object-contain object-center" />
                   <span>02 AM </span>
                 </div>
                 <div class="my-auto injectTemp2">Temp</div>
@@ -299,7 +291,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg3" width="32" height="32" />
+                  <img class="injectHfWImg3 w-8 h-8 object-contain object-center" />
                   <span>03 AM </span>
                 </div>
                 <div class="my-auto injectTemp3">Temp</div>
@@ -307,7 +299,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg4" width="32" height="32" />
+                  <img class="injectHfWImg4 w-8 h-8 object-contain object-center" />
                   <span>04 AM </span>
                 </div>
                 <div class="my-auto injectTemp4">Temp</div>
@@ -315,7 +307,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg5" width="32" height="32" />
+                  <img class="injectHfWImg5 w-8 h-8 object-contain object-center" />
                   <span>05 AM </span>
                 </div>
                 <div class="my-auto injectTemp5">Temp</div>
@@ -323,7 +315,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg6" width="32" height="32" />
+                  <img class="injectHfWImg6 w-8 h-8 object-contain object-center" />
                   <span>06 AM </span>
                 </div>
                 <div class="my-auto injectTemp6">Temp</div>
@@ -331,7 +323,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg7" width="32" height="32" />
+                  <img class="injectHfWImg7 w-8 h-8 object-contain object-center" />
                   <span>07 AM </span>
                 </div>
                 <div class="my-auto injectTemp7">Temp</div>
@@ -339,7 +331,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg8" width="32" height="32" />
+                  <img class="injectHfWImg8 w-8 h-8 object-contain object-center" />
                   <span>08 AM </span>
                 </div>
                 <div class="my-auto injectTemp8">Temp</div>
@@ -347,7 +339,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg9" width="32" height="32" />
+                  <img class="injectHfWImg9 w-8 h-8 object-contain object-center" />
                   <span>09 AM </span>
                 </div>
                 <div class="my-auto injectTemp9">Temp</div>
@@ -355,7 +347,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg10" width="32" height="32">
+                  <img class="injectHfWImg10 w-8 h-8 object-contain object-center">
 
                   <span>10 AM </span>
                 </div>
@@ -364,7 +356,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg11" width="32" height="32">
+                  <img class="injectHfWImg11 w-8 h-8 object-contain object-center">
 
                   <span>11 AM </span>
                 </div>
@@ -373,7 +365,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg12" width="32" height="32">
+                  <img class="injectHfWImg12 w-8 h-8 object-contain object-center">
 
                   <span>12 AM </span>
                 </div>
@@ -382,7 +374,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg13" width="32" height="32">
+                  <img class="injectHfWImg13 w-8 h-8 object-contain object-center">
 
                   <span>01 PM </span>
                 </div>
@@ -391,7 +383,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg14" width="32" height="32">
+                  <img class="injectHfWImg14 w-8 h-8 object-contain object-center">
 
                   <span>02 PM </span>
                 </div>
@@ -400,7 +392,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg15" width="32" height="32">
+                  <img class="injectHfWImg15 w-8 h-8 object-contain object-center">
 
                   <span>03 PM </span>
                 </div>
@@ -409,7 +401,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg16" width="32" height="32">
+                  <img class="injectHfWImg16 w-8 h-8 object-contain object-center">
 
                   <span>04 PM </span>
                 </div>
@@ -418,7 +410,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg17" width="32" height="32">
+                  <img class="injectHfWImg17 w-8 h-8 object-contain object-center">
 
                   <span>05 PM </span>
                 </div>
@@ -427,7 +419,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg18" width="32" height="32">
+                  <img class="injectHfWImg18 w-8 h-8 object-contain object-center">
 
                   <span>06 PM </span>
                 </div>
@@ -436,7 +428,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg19" width="32" height="32">
+                  <img class="injectHfWImg19 w-8 h-8 object-contain object-center">
 
                   <span>07 PM </span>
                 </div>
@@ -445,7 +437,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg20" width="32" height="32">
+                  <img class="injectHfWImg20 w-8 h-8 object-contain object-center">
 
                   <span>08 PM </span>
                 </div>
@@ -454,7 +446,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg21" width="32" height="32">
+                  <img class="injectHfWImg21 w-8 h-8 object-contain object-center">
 
                   <span>09 PM </span>
                 </div>
@@ -463,7 +455,7 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg22" width="32" height="32">
+                  <img class="injectHfWImg22 w-8 h-8 object-contain object-center">
 
                   <span>10 PM </span>
                 </div>
@@ -472,14 +464,11 @@
 
               <div class="bg-[hsl(240,22%,24%)] rounded-md sm:text-sm flex-1 p-2 flex justify-between">
                 <div class=" flex justify-center items-center gap-1">
-                  <img class="injectHfWImg23" width="32" height="32">
-
+                  <img class="injectHfWImg23 w-8 h-8 object-contain object-center">
                   <span>11 PM </span>
                 </div>
                 <div class="my-auto injectTemp23">Temp</div>
               </div>
-
-
 
             </div>
           </div>
@@ -488,7 +477,7 @@
       </hero>
     </main>
     <div class="Api_Error_Display hidden  flex-col items-center gap-4 mt-8 leading-6">
-      <img src="/assets/images/icon-error.svg" width="32" height="32">
+      <img src="/assets/images/icon-error.svg" class="w-12 h-12">
       <h1 class="text-3xl font-bold">Something Went Wrong</h1>
       <p class="whitespace-pre-wrap leading-6 w-[80%] text-center">We Could Not Connect To The Server <span
           class="whitespace-nowrap">(API Error).</span> Please Try Again In A Few Moments.</p>
@@ -497,11 +486,13 @@
         <p>Retry</p>
       </div>
     </div>
-    <div class="fixed bottom-0 left-0 w-full flex justify-center items-center">
-        Coded <span class="mx-1">by</span> <a href="#">Abhishek Kumar</a>,
-        Challenge <span class="mx-1">by</span> <a href="#">Frontend Mentor</a>. 
-      </div>
   </div>
+  <footer class="relative">
+    <div class="absolute bottom-0 left-0 w-full flex justify-center items-center text-white">
+      "Challenge <span class="mx-1">by</span> <a href="#">Frontend Mentor"</a>,
+      "Coded <span class="mx-1">by</span> <a href="#"> Abhishek"</a>.
+    </div>
+  </footer>
   <!-- Website Close Here -->
 </body>
 
