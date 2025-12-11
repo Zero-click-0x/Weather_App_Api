@@ -1,103 +1,253 @@
-# Frontend Mentor - Weather app
+# Weather App 🌤️
 
-![Design preview for the Weather app coding challenge](./preview.jpg)
+A modern, responsive weather application that provides real-time weather information and forecasts with an elegant user interface. Built with TypeScript, Tailwind CSS, and powered by Open-Meteo API.
 
-## Welcome! 👋
+## 🚀 Live Demo
 
-Thanks for checking out this coding challenge.
+[View Live Site](https://zero-click-0x.github.io/Weather_App_Api/)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## ✨ Features
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+### 🔍 **Search Functionality**
 
-## The challenge
+- **Smart location search** - Enter any city or location name to get instant weather data
+- **Autocomplete suggestions** - Get real-time location suggestions powered by OpenStreetMap Nominatim API
+- **Quick selection** - Click on any suggested location to instantly view its weather
 
-Build a weather app using the [Open-Meteo API](https://open-meteo.com/) and get it looking as close to the design as possible.
+### 🌡️ **Current Weather Display**
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- **Live temperature** readings with accurate weather icons
+- **Location details** - Current city name and date display
+- **Visual weather indicators** - Dynamic weather icons that change based on conditions
 
-Your users should be able to:
+### 📊 **Comprehensive Weather Metrics**
 
-- Search for weather information by entering a location in the search bar
-- View current weather conditions including temperature, weather icon, and location details
-- See additional weather metrics like "feels like" temperature, humidity percentage, wind speed, and precipitation amounts
-- Browse a 7-day weather forecast with daily high/low temperatures and weather icons
-- View an hourly forecast showing temperature changes throughout the day
-- Switch between different days of the week using the day selector in the hourly forecast section
-- Toggle between Imperial and Metric measurement units via the units dropdown
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- **Feels Like Temperature** - Apparent temperature for better planning
+- **Humidity Percentage** - Current air moisture levels
+- **Wind Speed** - Real-time wind conditions
+- **Precipitation Amount** - Current rainfall or snowfall measurements
 
-## Getting started
+### 📅 **7-Day Weather Forecast**
 
-### What's included
+- **Daily predictions** - View high and low temperatures for the next week
+- **Weather icons** - Visual representation of expected conditions
+- **Day-by-day breakdown** - Easy-to-read forecast cards with abbreviated day names
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### ⏰ **Hourly Forecast**
 
-**In your download:**
-- Mobile and desktop designs (JPG format)
-- All required assets in the `/assets` folder
-- Variable and static font files (or link to Google Fonts)
-- `style-guide.md` with colors, fonts, and other design specs
+- **24-hour view** - Temperature changes throughout the day
+- **Scrollable timeline** - Navigate through hourly predictions
+- **Weather icons** - Visual indicators for each hour
+- **Day selector** - Switch between different days of the week to view hourly forecasts
 
-**Want more accurate builds?** The designs are in JPG static format, which means you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. If you'd like the Figma design file to help build a more accurate solution faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### ⚙️ **Unit Conversion**
 
-### API setup
+- **Imperial/Metric toggle** - Seamlessly switch between measurement systems
+- **Temperature units** - Choose between Celsius (°C) and Fahrenheit (°F)
+- **Wind speed units** - Toggle between km/h and mph
+- **Precipitation units** - Switch between millimeters (mm) and inches (in)
 
-This project uses the [Open-Meteo API](https://open-meteo.com/) to fetch weather data.
+### 📱 **Responsive Design**
 
-**Good news:** Open-Meteo is completely free and doesn't require an API key! You can start making requests right away.
+- **Mobile-first approach** - Optimized for smartphones and tablets
+- **Tablet layout** - Enhanced viewing experience on medium screens
+- **Desktop optimization** - Full-featured interface for large screens
+- **Adaptive breakpoints** - Smooth transitions between screen sizes
 
-- **API Documentation:** [https://open-meteo.com/en/docs](https://open-meteo.com/en/docs)
-- **No rate limits** for reasonable personal use
-- Example endpoint: `https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true`
+### 🎨 **Interactive UI Elements**
 
-Check their documentation for all available weather parameters and location search capabilities.
+- **Hover effects** - Visual feedback on all clickable elements
+- **Focus states** - Keyboard navigation support with clear focus indicators
+- **Smooth animations** - Polished user experience with subtle transitions
+- **Dropdown menus** - Intuitive expandable sections for units and day selection
 
-## Building your project
+## 🛠️ Built With
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### **Core Technologies**
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- **TypeScript** - Type-safe JavaScript for robust code
+- **HTML5** - Semantic markup structure
+- **Tailwind CSS** - Utility-first CSS framework for modern styling
 
-**Need help?** [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### **Build Tools**
 
-## Deploying your project
+- **Vite** - Lightning-fast build tool and dev server
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+### **APIs**
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- **Open-Meteo API** - Free weather data provider (no API key required)
+- **Nominatim API** - OpenStreetMap geocoding for location search
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### **Custom Fonts**
 
-## Submitting your solution
+- **Bricolage Grotesque** - Modern display font
+- **DM Sans** - Clean, readable body font
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## 🚀 Getting Started
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### **Prerequisites**
 
-**We strongly recommend overwriting this `README.md` with a custom one.** We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code. The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings.
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-## Sharing your solution
+### **Installation**
 
-There are multiple places you can share your solution:
+1. **Clone the repository**
 
-1. Submit it on the platform and share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community)
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+```bash
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+```
 
-## Got feedback for us?
+2. **Install dependencies**
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+```bash
+npm install
+```
 
-**This challenge is completely free. Please share it with anyone who will find it useful for practice.**
+3. **Start the development server**
 
-**Have fun building!** 🚀
+```bash
+npm run dev
+```
+
+4. **Open in browser**
+
+```
+Navigate to http://localhost:5173
+```
+
+### **Build for Production**
+
+```bash
+npm run build
+```
+
+The optimized files will be generated in the `dist/` directory.
+
+## 📦 Project Structure
+
+```
+weather-app/
+├── src/
+│   ├── main.ts              # Core TypeScript logic
+│   ├── input.css            # Tailwind CSS configuration
+│   └── assets/
+│       ├── images/          # Weather icons and UI assets
+│       └── fonts/           # Custom font files
+├── index.html               # Main HTML file
+├── package.json             # Project dependencies
+├── tsconfig.json            # TypeScript configuration
+├── tailwind.config.js       # Tailwind CSS settings
+└── vite.config.js           # Vite build configuration
+```
+
+## 🎯 Usage Guide
+
+### **Search for a Location**
+
+1. Click on the search input field
+2. Type the name of any city or location
+3. Select from the dropdown suggestions
+4. Click the "Search" button to view weather data
+
+### **Switch Measurement Units**
+
+1. Click the "Units" button in the top-right corner
+2. Select "Switch to Imperial" or "Switch to Metric"
+3. Choose individual unit preferences:
+   - Temperature (°C/°F)
+   - Wind Speed (km/h/mph)
+   - Precipitation (mm/in)
+
+### **View Hourly Forecast for Different Days**
+
+1. Locate the "Hourly Forecast" section on the right
+2. Click the day dropdown (shows "Today" by default)
+3. Select any day from the next 6 days
+4. Scroll through the 24-hour forecast
+
+### **Default Location**
+
+The app loads with Lucknow, India as the default location. Search for your city to get localized weather data.
+
+## 🌐 API Information
+
+### **Weather Data**
+
+- **Provider**: [Open-Meteo](https://open-meteo.com/)
+- **Type**: Free, no authentication required
+- **Features**: Current weather, hourly forecasts, 7-day predictions
+
+### **Location Search**
+
+- **Provider**: [Nominatim (OpenStreetMap)](https://nominatim.openstreetmap.org/)
+- **Type**: Free geocoding service
+- **Rate Limit**: 1 request per second (handled by debouncing)
+
+## 📱 Responsive Breakpoints
+
+```css
+Mobile:  < 640px (sm)
+Tablet:  640px - 1024px (md, lg)
+Desktop: > 1024px (xl)
+```
+
+## 🎨 Color Scheme
+
+```css
+Primary Background:   hsl(241.42, 95%, 9%)   /* Deep Blue */
+Secondary Background: hsl(240, 26%, 20%)     /* Dark Blue-Gray */
+Hover State:          hsl(240, 22%, 24%)     /* Lighter Blue-Gray */
+Accent:               #1449e6e4              /* Bright Blue */
+Text:                 #ffffff                /* White */
+```
+
+## 🐛 Known Issues & Future Enhancements
+
+### **Current Limitations**
+
+- Weather icons are static images (not animated)
+- No offline functionality
+- Limited to locations available in Nominatim database
+
+### **Planned Features**
+
+- [ ] Add weather alerts and warnings
+- [ ] Implement geolocation for automatic location detection
+- [ ] Add weather maps integration
+- [ ] Include UV index and air quality data
+- [ ] Save favorite locations
+- [ ] Dark/Light theme toggle
+- [ ] Progressive Web App (PWA) support
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **Open-Meteo** - For providing free weather API
+- **OpenStreetMap** - For location geocoding services
+- **Tailwind CSS** - For the utility-first CSS framework
+- **Frontend Mentor** - For project inspiration
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you find it helpful!**
+
+Made with ❤️ and ☕
+
+</div>
